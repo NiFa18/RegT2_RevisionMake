@@ -1,7 +1,7 @@
 *.aux
 *.fdb_latexmk
-RegT2.pdf
 *.out
-RegT2.fls
 *.log
 *.gz
+*.fls
+RegT2.pdf
