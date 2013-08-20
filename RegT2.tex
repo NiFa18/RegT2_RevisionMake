@@ -15,7 +15,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \include{header/header}
 
-\include{revision}
+
+\IfFileExists{./revision.tex}{\include{revision}}
+
 
 \usepackage{booktabs}
 \usepackage{longtable}
