@@ -3,7 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\titleinfo}{Regelungstechnik 2 - Formelsammlung}
 \newcommand{\authorinfo}{Braun \& Co., J. Rast, K\"orner, Gwerder}
-\newcommand{\versioninfo}{\revisiondate, $Commit: \revision$ - gem\"ass Unterricht Markus Kottmann/FS2013}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Standard projektübergreifender Header für
@@ -16,7 +15,9 @@
 \include{header/header}
 
 
-\IfFileExists{./revision.tex}{\include{revision}}
+\IfFileExists{./revision.tex} %if
+{\include{revision}\newcommand{\versioninfo}{\revisiondate, $Commit: \revision$ - gem\"ass Unterricht Markus Kottmann/FS2013}} %then
+{\newcommand{\versioninfo}{keine git Info verfügbar - gem\"ass Unterricht Markus Kottmann/FS2013}} %else
 
 
 \usepackage{booktabs}
