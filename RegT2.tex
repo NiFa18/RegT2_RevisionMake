@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentinformationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\titleinfo}{Regelungstechnik 2 - Formelsammlung}
+\newcommand{\authorinfo}{Braun \& Co., J. Rast, K\"orner, Gwerder}
+\newcommand{\versioninfo}{\revisiondate, $Commit: \revision$ - gem\"ass Unterricht Markus Kottmann/FS2013}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Standard projektübergreifender Header für
+% - Makros 
+% - Farben
+% - Mathematische Operatoren 
+%
+% DORT NUR ERGÄNZEN, NICHTS LÖSCHEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\include{header/header}
+
+\include{revision}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tikz}
+
+
+\usepackage{enumitem}
+\setlist{noitemsep,topsep=1pt,parsep=1pt,partopsep=1pt}
+
+\raggedbottom
+% Möglichst keine Ergänzungen hier, sondern in header.tex
+\begin{document} 
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{sections/GegenkopplungStabilitaet}
+\newpage
+\input{sections/PidRegler}
+\input{sections/Diverses}
+
+\end{document}
