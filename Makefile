@@ -1,6 +1,6 @@
 SHELL=bash
 TARGET=RegT2.pdf
-LL=latexmk -pdf -pdflatex="pdflatex --shell-escape %O %S"
+LL=latexmk -pdf
 CLEAN=latexmk -C
 
 
