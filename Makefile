@@ -1,6 +1,5 @@
 SHELL=bash
 TARGET=RegT2.pdf
-SRC=
 LL=latexmk -pdf -pdflatex="pdflatex --shell-escape %O %S"
 CLEAN=latexmk -C
 
@@ -12,7 +11,7 @@ revisionMake:
 	echo "\\newcommand{\\revisiondate}{`git log -1 --format=\"%ad\" --date=short`}" >> revision.tex
 	echo "\\newcommand{\\revision}{`git log -1 --format=\"%h\"`}" >> revision.tex
 
-$(TARGET): $(TARGET:%.pdf=%.tex) $(SRC)
+$(TARGET): $(TARGET:%.pdf=%.tex) revision.tex
 	$(LL) $<
 
 revisionRevert: revision.tex
