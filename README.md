@@ -20,3 +20,8 @@ Da dieser Kurs ständig aktualisiert wird, sind Aenderungen jederzeit möglich.
 Diese Zusammenfassung steht unter einer Creative Commons BY-NC-SA Lizenz.
 
 [![Foo](http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
+
+## gitInfo
+ Durch das Erzeugen der Zusammenfassung mit dem enthaltenen Makefile wird der aktuelle 
+ Commit mit dem entsprechenden Datum in der Kopfzeile angezeigt.
