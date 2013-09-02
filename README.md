@@ -25,3 +25,7 @@ Diese Zusammenfassung steht unter einer Creative Commons BY-NC-SA Lizenz.
 ## gitInfo
  Durch das Erzeugen der Zusammenfassung mit dem enthaltenen Makefile wird der aktuelle 
  Commit mit dem entsprechenden Datum in der Kopfzeile angezeigt.
+ 
+ # Voraussetzung/Vorgehen:
+  * git-tools installiert (Source: http://git-scm.com/downloads)
+  * `make` in der Kommandozeile ausführen
