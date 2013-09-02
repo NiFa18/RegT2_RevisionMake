@@ -4,6 +4,15 @@
 \newcommand{\titleinfo}{Regelungstechnik 2 - Formelsammlung}
 \newcommand{\authorinfo}{Braun \& Co., J. Rast, K\"orner, Gwerder}
 
+% PDF mit makefile erzeugen, damit VersionsInfo angezeigt wird.
+\IfFileExists{./revision.tex}
+% then
+{\include{revision}
+\newcommand{\versioninfo}{\revisiondate, $Commit: \revision$ - gem\"ass Unterricht Markus Kottmann/FS2013}}
+% else
+{\newcommand{\versioninfo}{keine git VersionsInfo verf\"ugbar - gem\"ass Unterricht Markus Kottmann/FS2013}}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Standard projektübergreifender Header für
 % - Makros 
@@ -13,11 +22,6 @@
 % DORT NUR ERGÄNZEN, NICHTS LÖSCHEN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \include{header/header}
-
-
-\IfFileExists{./revision.tex} %if
-{\include{revision}\newcommand{\versioninfo}{\revisiondate, $Commit: \revision$ - gem\"ass Unterricht Markus Kottmann/FS2013}} %then
-{\newcommand{\versioninfo}{keine git Info verfügbar - gem\"ass Unterricht Markus Kottmann/FS2013}} %else
 
 
 \usepackage{booktabs}
